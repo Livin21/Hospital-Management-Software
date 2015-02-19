@@ -1,0 +1,5 @@
+Create Database Hospital_DB;
+
+Create Table docDetails(Doctor_Code Varchar(5) Primary Key,Doctor_Name Varchar(20),Department Varchar(15),Consultation Varchar(10),Gender Char(6),Phone Int(11));
+
+Create Table patDetails(Patient_Code Varchar(5) Primary Key,Patient_Name Varchar(30),Doctor_Code Varchar(4),Diagnosis Varchar(30),Department Varchar(30),Gender Varchar(6),Amount Varchar(7),Patient_Type Varchar(2),DOA Varchar(12),NoDOS Varchar(3),DOD Varchar(12),Foreign Key(Doctor_Code) References Doctor(Doctor_Code));
